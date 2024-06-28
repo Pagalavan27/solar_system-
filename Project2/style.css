@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+
+.bg-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/solar1.jpg) no-repeat fixed center;
+    background-size: cover;
+    animation: scaling 30s linear infinite;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+} 
+
+.bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.bg-img1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/space1.jpg) no-repeat fixed center;
+    background-size: cover;
+    animation: scaling1 30s linear infinite;
+}
+
+@keyframes scaling1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.solar{
+    font-size: 2rem;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:focus{
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.mars {
+    position: absolute;
+    animation: movement 60s linear infinite;
+} 
+
+@keyframes movement {
+    0% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 50rem;
+        top: 20%;
+        right: -10%;
+        transform: rotate(180deg);
+    }
+    100% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+header>a {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header ul li {
+    font-weight: 600;
+    padding: 0 20px;
+    opacity: 0.6;
+}
+
+header ol li:first-child {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+main {
+    padding-top: 5%;
+}
+
+main p {
+    max-width: 50%;
+    opacity: 0.75;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 50%;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+footer a {
+    font-size: 1.5rem;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+ol{
+    padding: 10px;
+    list-style-type: decimal;
+    font-size: 1rem;
+    
+}
+
+.venus_p{
+    font-size: 1.2rem;
+}
